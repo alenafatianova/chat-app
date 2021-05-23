@@ -1,11 +1,8 @@
 import React from 'react'
 import { Form as BaseForm } from 'antd'
-import { Input } from '../Input/Input'
-import { Checkbox } from '../Checkbox/Checkbox'
-import { Button } from '../Button/Button'
 
 type formPropsType = {
-    className: string
+    className?: string
 }
 
 export const Form: React.FC<formPropsType> = ({className, children}) => {

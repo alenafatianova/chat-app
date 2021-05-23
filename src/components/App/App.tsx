@@ -6,10 +6,10 @@ import { SignUp } from '../SignUp/SignUp';
 
 export const App = () => {
   return (
-    <div className="App">
+    <>
       <Route exact path='/' render={() => <SignIn/>} />
       <Route path="/sign-up" render={() => <SignUp/>} />
-    </div>
+    </>
   )
 }
 

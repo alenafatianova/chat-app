@@ -14,8 +14,8 @@ export const SignIn = () => {
             <span className="signin_form_title">Пожалуйста, войдите в свой аккаунт</span>
           </div>
           <Form className="form_signin">
-          <Input/>
-            <Button buttonText='Click here'></Button> 
+            <Input/>
+            <Button buttonText='Click here' className='signin_btn_primary'></Button> 
             <Checkbox/> 
           </Form>
         </div>
