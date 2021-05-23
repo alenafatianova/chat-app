@@ -13,7 +13,7 @@ export const Button: React.FC<buttonProps> = ({buttonText}) => {
            <BaseButton type='primary' size='large' className='button_primary'>
                {buttonText}
            </BaseButton> 
-           Or <Link to="/signUp">register now!</Link>
+          <div className="register_now_link"> Or <Link to="/signUp">register now!</Link></div>
         </>
     )
 }

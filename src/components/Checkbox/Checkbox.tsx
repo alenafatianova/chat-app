@@ -8,9 +8,7 @@ export const Checkbox = () => {
             <div className="form_checkbox_item">
             <Form.Item valuePropName="checked">
             <BaseCheckbox>Remember me</BaseCheckbox>
-            <Link to='/forgotPassword' className="login-form-forgot">
-                Forgot password
-            </Link>
+            <Link to='/forgotPassword' className="login-form-forgot">Forgot password</Link>
             </Form.Item> 
             </div>
         </div>
