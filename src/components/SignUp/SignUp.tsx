@@ -1,7 +1,7 @@
 import { Input } from 'antd'
 import React, { ChangeEvent, useCallback, useState } from 'react'
 import { Button } from 'antd'
-import {Form} from '../Form/Form'
+import {Form} from 'antd'
 import './SignUp.scss'
 import { Link } from 'react-router-dom'
 

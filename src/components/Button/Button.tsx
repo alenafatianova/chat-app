@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 type buttonProps = {
     buttonText: string
-    className: string
+    className?: string
 }
 
 export const Button: React.FC<buttonProps> = ({buttonText, className}) => {
@@ -14,7 +14,6 @@ export const Button: React.FC<buttonProps> = ({buttonText, className}) => {
            <BaseButton type='primary' size='large' className='button_primary'>
                {buttonText}
            </BaseButton> 
-          <div className="register_now_link"> Or <Link to="/sign-up">register now!</Link></div>
         </>
     )
 }
