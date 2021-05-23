@@ -1,5 +1,8 @@
 import React from 'react'
+import { Button } from '../Button/Button'
+import { Checkbox } from '../Checkbox/Checkbox'
 import { Form } from '../Form/Form'
+import { Input } from '../Input/Input'
 import './SignIn.scss'
 
 export const SignIn = () => {
@@ -10,7 +13,11 @@ export const SignIn = () => {
             <h2>Войти в аккаунт</h2>
             <span className="signin_form_title">Пожалуйста, войдите в свой аккаунт</span>
           </div>
-          <Form className="form_signin"/>
+          <Form className="form_signin">
+          <Input/>
+            <Button buttonText='Click here'></Button> 
+            <Checkbox/> 
+          </Form>
         </div>
       </section>
     )

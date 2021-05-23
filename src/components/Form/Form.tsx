@@ -8,14 +8,12 @@ type formPropsType = {
     className: string
 }
 
-export const Form: React.FC<formPropsType> = ({className}) => {
+export const Form: React.FC<formPropsType> = ({className, children}) => {
     return (
         <>
             <BaseForm initialValues={{remember: true}} className={className}>
-                <Input/>
-                <Button buttonText='Click here'></Button> 
-                <Checkbox/>
-            </BaseForm> 
+                {children}
+            </BaseForm>
         </>
     )
 }
