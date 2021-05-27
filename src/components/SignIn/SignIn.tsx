@@ -33,7 +33,7 @@ export const SignIn = () => {
                 <div className="register_now_link"> Or <Link to="/sign-up">register now!</Link></div>
                 <div className='signin_checkbox_input_link'>
                   <Checkbox/>Remember me
-                  <Link to='/forgotPassword' className="link_forgot_password">Forgot password</Link>
+                  <Link to='/forgot-password' className="link_forgot_password">Forgot password</Link>
                 </div>
                 
           </Form>
