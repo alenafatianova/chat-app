@@ -13,7 +13,8 @@ export const SignUp = () => {
     const [nameInput, setNameInput] = useState('')
     const [passwordValue, setPasswordValue] = useState('')
     const [passwordCheck, setPasswordCheck] = useState('')
-    const [authSuccess, setAuthSuccess] = useState(true)
+    const [authSuccess, setAuthSuccess] = useState(false)
+    const [signUp, setSignUp] = useState(false)
     
     // onChange functions for inputs
     const onEmailChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
@@ -36,7 +37,11 @@ export const SignUp = () => {
         setPasswordCheck(e.currentTarget.value)
         passwordValue.trim() === passwordCheck.trim() ? console.log('okay') : console.log('пароли не совпадают')
     }
-
+    const onButtonClick = () => {
+        setSignUp(true)
+        setAuthSuccess(true)
+    }
+    
     return (
             <section className="signup_form_container">
                 { authSuccess ? <ConfirmPassword/> : (
@@ -51,7 +56,7 @@ export const SignUp = () => {
                                    <Input placeholder='Ваше имя' value={nameInput} onChange={onNameChange} className='signup_form_input'/>
                                    <Input placeholder='Пароль' value={passwordValue} onChange={onPasswordChange} className='signup_form_input'/>
                                    <Input placeholder='Повторите пароль' value={passwordCheck} onChange={onPasswordCheck} className='signup_form_input'/>
-                                   <Button type="primary" size="large" className='signup_btn_primary'>Зарегистрироваться</Button>
+                                   <Button type="primary" size="large" className='signup_btn_primary' onClick={onButtonClick}>Зарегистрироваться</Button>
                                </Form>
                               <div className='link_to_signin_div'> <Link className='link_to_signin' to='/'>Войти в аккаунт</Link></div>
                            </div>
