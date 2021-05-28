@@ -22,7 +22,7 @@ export const Message:React.FC<MessageProps> = ({avatar, textMessage, date, user}
                    <div className='user__text__message__bubble'>
                         <p className='text__message'>{textMessage}</p>
                    </div>
-                   <span>{date}</span>
+                   <span className='message__date'>{date}</span>
                </div>
             </div> 
         </>
