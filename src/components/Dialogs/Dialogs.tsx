@@ -3,6 +3,7 @@ import { Message } from '../Message/Message'
 import './Dialogs.scss'
 
 
+
 export const Dialogs = () => {
 
     const user = {
