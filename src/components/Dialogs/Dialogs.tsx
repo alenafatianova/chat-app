@@ -4,6 +4,8 @@ import './Dialogs.scss'
 
 
 
+
+
 export const Dialogs = () => {
 
     const user = {
@@ -13,14 +15,14 @@ export const Dialogs = () => {
     return (
         <>
          <div>
-             this is dialog's page
              <Message 
                 user={user}
                 avatar='https://image.flaticon.com/icons/png/512/194/194938.png' 
                 textMessage='Привет!) Ты знаешь что-то про сайт Randewoo? Нашла у одного блогера...' 
-                date={'Вчера, в 21.31'}
-            />
+                dateTime={'2021, 5, 28'}/>
         </div>   
         </>
     )
 }
+
+
