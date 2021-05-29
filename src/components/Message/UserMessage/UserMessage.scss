@@ -1,38 +1,36 @@
-@import '../variable';
-@import '~reset-css';
-
-
-.message__item__container {
+.user__message__item__container {
     display: flex;
     max-width: 440px;
     margin-bottom: 15px;
-    .message__avatar {
+    flex-direction: row-reverse;
+    .user__message__avatar {
         display: flex;
         flex-direction: column-reverse;
         .user__avatar__icon {
             width: 30px;
             height: 30px;
             border-radius: 50px;
-            margin-right: 13px;
+            margin-left: 13px;
             margin-bottom: 22px;
         }
     }
-   
     .user__text__message__bubble {
-        background: $blue;
+        background: #fff;
         box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733);
-        border-radius: 12px 12px 12px 0px;
+        border-radius: 12px 12px 0px 12px;
         padding: 15px;
         margin-bottom: 10px;
     }
     .text__message {
-        color: #fff;
+        color: rgb(53, 53, 53);
         font-size: 14px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, serif;  
     }
     .message__date {
         font-size: 12px;
         opacity: 0.5;
         line-height: 20px;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
