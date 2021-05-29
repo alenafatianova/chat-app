@@ -6,15 +6,16 @@ import { ru } from 'date-fns/locale'
 export type MessageProps = {
     avatar: string
     textMessage: string
-    date: number | Date 
+    date: number | Date,
+    isMe: boolean,
+    isRead: boolean
     user: {
         name: string,
         surname: string
     }
 }
 
-export const Message:React.FC<MessageProps> = ({avatar, textMessage,date, user}) => {
-  
+export const Message:React.FC<MessageProps> = ({avatar, textMessage, date, user}) => {
     const dateTime = format(date, "hh:mm a dd/MM/yy", {locale: ru})
    
     return (
