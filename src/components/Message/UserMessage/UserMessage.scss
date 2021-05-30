@@ -3,6 +3,7 @@
     max-width: 440px;
     margin-bottom: 15px;
     flex-direction: row-reverse;
+    float: right;
     .user__message__avatar {
         display: flex;
         flex-direction: column-reverse;
@@ -11,7 +12,7 @@
             height: 30px;
             border-radius: 50px;
             margin-left: 13px;
-            margin-bottom: 22px;
+            margin-bottom: 44px;
         }
     }
     .user__text__message__bubble {
@@ -32,5 +33,14 @@
         line-height: 20px;
         display: flex;
         flex-direction: row-reverse;
+    }
+    .doublemark__icon__block {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .doublemark__msg {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
     }
 }

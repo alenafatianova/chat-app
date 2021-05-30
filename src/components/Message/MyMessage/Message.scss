@@ -35,4 +35,13 @@
         opacity: 0.5;
         line-height: 20px;
     }
+    .doublemark__icon__block {
+        display: flex;
+        flex-direction: row;
+    }
+    .doublemark__msg {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
 }

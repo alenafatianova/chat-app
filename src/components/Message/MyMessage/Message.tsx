@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Message.scss'
 import { format } from 'date-fns'
 import { ru } from 'date-fns/locale'
+import doubleMark from '../../../assets/doublemarkSVG.svg'
 
 export type MessageProps = {
     avatar: string
@@ -29,6 +30,9 @@ export const Message:React.FC<MessageProps> = ({avatar, textMessage, date, user}
                         <p className='text__message'>{textMessage}</p>
                    </div>
                    <span className='message__date'>{dateTime}</span>
+                   <div className="doublemark__icon__block">
+                     <img className="doublemark__msg" src={doubleMark} alt="Message is read icon" />
+                   </div>
                </div>
             </div> 
         </>

@@ -26,7 +26,7 @@ export const Dialogs = () => {
                 isRead={true}
                 />
 
-                <UserMessage 
+            <UserMessage 
                     user={notMe} 
                     textMessage="Не....не слышала, а что там?" 
                     avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk3foOLIFyywPZxD0tOaPCXnsND2mzflXeGQ&usqp=CAU"
