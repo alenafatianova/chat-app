@@ -17,15 +17,14 @@ export const UserMessage: React.FC<MessageProps> = ({avatar, user, date, textMes
                </div>
                <div className='user__text__message__content'>
                    <div className="message__info">
-                   <div className='user__text__message__bubble'>
-                        <p className='text__message'>{textMessage}</p>
-                   </div>
-                   <span className='message__date'>{dateTime}</span>
                    <div className="doublemark__icon__block">
                        {isMe && isRead 
                         ? <img className="read__msg" src={readMsg} alt="Message is read icon" />
                         : <img className="unread__msg" src={unreadMsg} alt="Message is unread" />
                        }
+                   </div>
+                   <div className='user__text__message__bubble'>
+                        <p className='text__message'>{textMessage}</p>
                    </div>
                    <div className="message__attachments">
                         {attachments &&  attachments.map((attachment) => {
@@ -36,7 +35,7 @@ export const UserMessage: React.FC<MessageProps> = ({avatar, user, date, textMes
                         }
                   </div>
                    </div>
-                 
+                   <span className='message__date'>{dateTime}</span>
                </div>
             </div>    
         </>
